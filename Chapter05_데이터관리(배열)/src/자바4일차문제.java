@@ -66,19 +66,19 @@ public class 자바4일차문제 {
 //		}
 //System.out.println(max);
 		
-//		int[] arr = new int[3];
-//		int total = 0;
-//		for(int i=0;i<arr.length;i++) {
-//			arr[i] = scan.nextInt();
-//			total += arr[i];
-//		}	
-//		System.out.printf("%.2f",total/(double)arr.length;);
+		int[] arr = new int[3];
+		int total = 0;
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = (int)(Math.random()*9)+1;
+			total += arr[i];
+		}	
+		System.out.printf("%.2f",total/(double)arr.length);
 
-		int[] arr = {95,75,85,100,50};
-		Arrays.sort(arr);
-		for(int a:arr) {
-			System.out.print(a+" ");
-		}
+//		int[] arr = {95,75,85,100,50};
+//		Arrays.sort(arr);
+//		for(int a:arr) {
+//			System.out.print(a+" ");
+//		}
 		
 		
 		
