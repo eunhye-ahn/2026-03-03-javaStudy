@@ -38,6 +38,9 @@
 
 import java.util.Scanner;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 class Student{
 	int kor,eng,math,total;
 	double avg;
@@ -46,12 +49,47 @@ class Student{
 }
 
 class Diary{
-	int year, month, week, lastday;
-	
+	int year = 2026;
+	int month;
+	int week = 18;
+	int lastday;
+	Diary(int year, int month, int week, int lastday){
+		this.year = year;
+		this.month = month;
+		this.week = week;
+		this.lastday = lastday;
+	};
+	Diary(int month, int lastday){
+		this.month = month;
+		this.lastday = lastday;
+	}
 }
+
+class RefreshToken {
+	int created_at;
+	String user;
+	int expired_at;
+	String token;
+	public RefreshToken updateToken(int newExpiredAt, String user){
+		this.expired_at = newExpiredAt;
+		this.user = user;
+		return this;
+	} //Entity Update;
+}
+@NoArgsConstructor // 빈 생성자
+@AllArgsConstructor //모든 필드를 갖고있는 생성자
+class A{
+	int a,b;
+}
+
 public class 객체지향프로그램_개념 {
 
 	public static void main(String[] args) {
+		Diary d = new Diary(2020,8,16,1);
+		System.out.printf("%d.%d.%d.%d\n",d.year,d.month,d.week, d.lastday);
+		Diary d1 = new Diary(4,8);
+		System.out.printf("%d.%d.%d.%d\n",d1.year,d1.month,d1.week, d1.lastday);
+		A a = new A();
 		// TODO Auto-generated method stub
 //		Student[] std = new Student[3];
 //		Scanner scan = new Scanner(System.in);
