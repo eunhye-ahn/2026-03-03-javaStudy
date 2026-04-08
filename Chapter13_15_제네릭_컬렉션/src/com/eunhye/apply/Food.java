@@ -3,6 +3,7 @@ package com.eunhye.apply;
 import lombok.Getter;
 import lombok.Setter;
 
+
 @Getter
 @Setter
 public class Food {

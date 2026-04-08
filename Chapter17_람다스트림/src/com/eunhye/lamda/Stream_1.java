@@ -3,6 +3,7 @@ package com.eunhye.lamda;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class Stream_1 {
 	public static void main(String[] args) {
 		// List.of() : 정적팩토리메서드 <- 보충공부필요
